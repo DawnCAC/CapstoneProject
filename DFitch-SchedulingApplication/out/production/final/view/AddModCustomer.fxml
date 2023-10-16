@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddModCustomer">
+   <children>
+      <Label layoutX="169.0" layoutY="42.0" text="Customer">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="50.0" layoutY="600.0" mnemonicParsing="false" onMouseClicked="#saveToCustomers" prefWidth="125.0" text="Save">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="335.0" layoutY="600.0" mnemonicParsing="false" onMouseClicked="#toCustomers" prefWidth="125.0" text="Cancel" AnchorPane.rightAnchor="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="50.0" layoutY="200.0" text="Customer Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="260.0" text="Address">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="320.0" text="First Level Division" AnchorPane.leftAnchor="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="380.0" text="Country">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="440.0" text="Postal Code">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="500.0" text="Phone Number">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="140.0" text="Customer ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="customerId" disable="true" layoutX="244.0" layoutY="141.0" prefHeight="25.0" prefWidth="220.0" AnchorPane.rightAnchor="50.0" />
+      <TextField fx:id="customerName" layoutX="258.0" layoutY="201.0" prefWidth="220.0" AnchorPane.rightAnchor="50.0" />
+      <TextField fx:id="address" layoutX="258.0" layoutY="261.0" prefWidth="220.0" AnchorPane.rightAnchor="50.0" />
+      <TextField fx:id="postalCode" layoutX="258.0" layoutY="441.0" prefWidth="220.0" AnchorPane.rightAnchor="50.0" />
+      <TextField fx:id="phone" layoutX="258.0" layoutY="501.0" prefWidth="220.0" AnchorPane.rightAnchor="50.0" />
+      <ComboBox fx:id="division" layoutX="233.0" layoutY="321.0" onMouseClicked="#populateDivision" prefHeight="25.0" prefWidth="220.0" AnchorPane.rightAnchor="50.0" />
+      <ComboBox fx:id="country" layoutX="257.0" layoutY="381.0" onMouseClicked="#populateCountry" prefWidth="220.0" AnchorPane.rightAnchor="50.0" />
+   </children>
+</AnchorPane>
